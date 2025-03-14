@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huỳnh Trọng Tín - Portfolio</title>
+    <link rel="stylesheet" href="/assets/css/style_Tin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loader"></div>
+        <p>Đang tải...</p>
+    </div>
+
+    <canvas id="bg"></canvas>
+
+    <!-- Add dark mode toggle button -->
+    <div class="theme-toggle">
+        <button id="darkModeToggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </button>
+    </div>
+
+    <header>
+        <div class="logo">HTT</div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Xin chào, tôi là <span class="highlight">Huỳnh Trọng Tín</span></h1>
+                    <h2>Software Engineer</h2>
+                    <p>Tôi là kỹ sư phần mềm.</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn primary">Xem dự án</a>
+                        <a href="#contact" class="btn secondary">Liên hệ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">Về tôi</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-container">
+                            <img src="https://res.cloudinary.com/ddmsl3meg/image/upload/v1741807386/s6law3xrrfxrbcc0aolz.jpg" alt="Huỳnh Trọng Tín">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h3>Huỳnh Trọng Tín</h3>
+                        <p class="subtitle">Software Engineer</p>
+                        <p>Tôi là một nhà phát triển web đam mê với hơn 3 năm kinh nghiệm trong việc tạo ra các trang web và ứng dụng web hiện đại, đáp ứng. Tôi thích kết hợp thiết kế sáng tạo với mã nguồn sạch để tạo ra những trải nghiệm người dùng tuyệt vời.</p>
+                        <p>Tôi luôn tìm kiếm những thách thức mới và cơ hội để mở rộng kỹ năng của mình. Khi không viết mã, bạn có thể tìm thấy tôi đang khám phá công nghệ mới, chơi guitar, hoặc đi du lịch.</p>
+                        <div class="personal-info">
+                            <div class="info-item">
+                                <span class="info-title">Email:</span>
+                                <span class="info-value">tincui012@gmail.com</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-title">Điện thoại:</span>
+                                <span class="info-value">+84 855 005 06</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-title">Địa chỉ:</span>
+                                <span class="info-value">Hồ Chí Minh, Việt Nam</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/DucThang0912" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <a href="#" class="btn primary">Tải CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Kỹ năng</h2>
+                <div class="skills-content">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>HTML/CSS</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>JavaScript</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>React</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Node.js</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Express</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>MongoDB</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Công cụ & Khác</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Git</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Figma</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Three.js</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Dự án</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://scontent.fsgn6-1.fna.fbcdn.net/v/t1.15752-9/484439122_2084080858706619_7639355574674509349_n.png?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEZwfBaSLFZcID0WLOTmZqMnysl0i8p3USfKyXSLyndRNLHrD5-ZYMGlEmtRbLnIGvsTlWpOwfboKyAbaOqCeHm&_nc_ohc=DHOS74ByXEYQ7kNvgGWGkLe&_nc_oc=Adi1Cq5a6K_lK2pgxpFQ6cFRFJ9auKbzYcxYX6e53N7JXcISsIeBYnU6MsjTG5IinOo&_nc_zt=23&_nc_ht=scontent.fsgn6-1.fna&oh=03_Q7cD1wEj9iQnWfrOcgZ4J35pm20jHwhOcp--T96xzUkrg_OukA&oe=67FB4075" alt="Dự án 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>Website Hệ Thống Quản Lý Công Việc</h3>
+                            <p>Tích hợp API RESTful với Axios, hỗ trợ
+                                CRUD cho tài khoản, bảng, cột, thẻ, lời mời thành viên,
+                                quản lý thẻ (thành viên, ảnh, tệp, nhận xét) và
+                                Cloudinary lưu trữ ảnh, kèm AI gợi ý & tối ưu yêu cầu
+                                người dùng. </p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://work-management-website.vercel.app/" class="btn small">Demo</a>
+                                <a href="#" class="btn small secondary">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://scontent.fsgn1-1.fna.fbcdn.net/v/t1.15752-9/483560959_1172848561208324_6262121953758134572_n.png?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeELaqyDoKnms9E3BdrRe5-FyXjb81mz_TrJeNvzWbP9Or1HtsE6IoEVffO6mwoqTOUPPL2K6oMpf_e5McAHv3eu&_nc_ohc=uBeZpHvQ-2UQ7kNvgElB1oy&_nc_oc=Adhh91wyBhNXX7Xrs9oCb5FMTwA-uZEd2zFFV6cMHn26EDtiyfhPqLpVwc2BUz5WbZ8&_nc_zt=23&_nc_ht=scontent.fsgn1-1.fna&oh=03_Q7cD1wERO5dL5g4_JXgSZPy0gVePe9dF0-7TF5XatItlRSRLgA&oe=67FB479E" alt="Dự án 2">
+                        </div>
+                        <div class="project-info">
+                            <h3>Website Thực Phẩm Sạch</h3>
+                            <p>Xác thực người dùng, quản lý hồ
+                                sơ, mua sắm & tích điểm đổi voucher, xếp hạng cấp
+                                bậc, cập nhật tin tức thực phẩm sạch, quản trị vai trò
+                                & CRUD sản phẩm, tin tức,..</p>
+                            <div class="project-tech">
+                                <span>React.js, Material UI.</span>
+                                <span>Spring Boot.</span>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://tniciu-vegetable.vercel.app/" class="btn small">Demo</a>
+                                <a href="#" class="btn small secondary">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://scontent.fsgn1-1.fna.fbcdn.net/v/t1.15752-9/481746900_1624218941543175_5500491583696632702_n.png?stp=dst-png_s640x640&_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeF6eLux4oZg5jM4Tj41Du8w_H6O5x20c5P8fo7nHbRzkzrKRLYTPSZDiZAvim21eu4_WMU0fLO55_sk-4wzYumz&_nc_ohc=HREK1d1VdS4Q7kNvgH5mEH0&_nc_oc=AdhvCev78ilPp0fleYa0jX34nRiBVFr_33N7DsIBu-1PCfIoG35giYaZ6KOEK_DRSwU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fsgn1-1.fna&oh=03_Q7cD1wF0x0sgQZ0zw5ZhnIJoFJeEBCVPoIrVbgdizZuqMyUFgA&oe=67FB3991" alt="Dự án 3">
+                        </div>
+                        <div class="project-info">
+                            <h3>Mua ban o to</h3>
+                            <p>Mua ban o to.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Firebase</span>
+                                <span>Material UI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://volkswagendongnai.com/" class="btn small">Demo</a>
+                                <a href="#" class="btn small secondary">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="center-button">
+                    <a href="#" class="btn primary">Xem thêm dự án</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Liên hệ</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Thông tin liên hệ</h3>
+                        <p>Hãy liên hệ với tôi nếu bạn có bất kỳ câu hỏi nào hoặc muốn thảo luận về dự án tiềm năng.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>ducthang@140912@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Điện thoại</h4>
+                                    <p>+84 703 635 306</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Địa chỉ</h4>
+                                    <p>Hồ Chí Minh, Việt Nam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Gửi tin nhắn</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Họ tên" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" placeholder="Tiêu đề">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Tin nhắn" required></textarea>
+                            </div>
+                            <button type="submit" class="btn primary">Gửi tin nhắn</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Huỳnh Trọng Tín</h3>
+                    <p>Web Developer & Designer</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Liên kết nhanh</h4>
+                    <ul>
+                        <li><a href="#home">Trang chủ</a></li>
+                        <li><a href="#about">Giới thiệu</a></li>
+                        <li><a href="#skills">Kỹ năng</a></li>
+                        <li><a href="#projects">Dự án</a></li>
+                        <li><a href="#contact">Liên ~hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Liên hệ</h4>
+                    <p><i class="fas fa-envelope"></i> tincui012@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +84 855 005 06</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Hồ Chí Minh, Việt Nam</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Theo dõi</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Huỳnh Trọng Tín. Tất cả các quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="/assets/js/script_Tin.js"></script>
+</body>
+</html>
