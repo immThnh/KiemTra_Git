@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Minh Tân - Portfolio</title>
+    <link rel="stylesheet" href="/assets/css/style_Tan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loader"></div>
+        <p>Đang tải...</p>
+    </div>
+
+    <canvas id="bg"></canvas>
+
+    <!-- Add dark mode toggle button -->
+    <div class="theme-toggle">
+        <button id="darkModeToggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </button>
+    </div>
+
+    <header>
+        <div class="logo">ABOUT ME</div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Xin chào, tôi là <span class="highlight">Nguyễn Minh Tân</span></h1>
+                    <h2>Web Developer & Designer</h2>
+                    <p>Tôi chuyên thiết kế và phát triển trải nghiệm số sáng tạo.</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn primary">Xem dự án</a>
+                        <a href="#contact" class="btn secondary">Liên hệ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">Về tôi</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-container">
+                            <img src="https://i.pinimg.com/736x/1b/fb/2d/1bfb2d6b64e8358b891da997d574c3c4.jpg" alt="Nguyễn Minh Tân">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h3>Nguyễn Minh Tân</h3>
+                        <p class="subtitle">Web Developer & Designer</p>
+                        <p>Tôi là một nhà phát triển web đam mê với hơn 3 năm kinh nghiệm trong việc tạo ra các trang web và ứng dụng web hiện đại, đáp ứng. Tôi thích kết hợp thiết kế sáng tạo với mã nguồn sạch để tạo ra những trải nghiệm người dùng tuyệt vời.</p>
+                        <p>Tôi luôn tìm kiếm những thách thức mới và cơ hội để mở rộng kỹ năng của mình. Khi không viết mã, bạn có thể tìm thấy tôi đang khám phá công nghệ mới, chơi guitar, hoặc đi du lịch.</p>
+                        <div class="personal-info">
+                            <div class="info-item">
+                                <span class="info-title">Email:</span>
+                                <span class="info-value">nminhtan1411@gmail.com</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-title">Điện thoại:</span>
+                                <span class="info-value">0935778251</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-title">Địa chỉ:</span>
+                                <span class="info-value">Hồ Chí Minh, Việt Nam</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="zzz" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <a href="#" class="btn primary">Tải CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Kỹ năng</h2>
+                <div class="skills-content">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>HTML/CSS</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>JavaScript</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>React</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Node.js</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Express</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>MongoDB</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Công cụ & Khác</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Git</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Figma</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Three.js</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Dự án</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./images/projectDemo.jpg" alt="Dự án 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>E-commerce Website</h3>
+                            <p>Trang web thương mại điện tử đầy đủ tính năng với thanh toán, quản lý sản phẩm và hệ thống đánh giá.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn small">Demo</a>
+                                <a href="#" class="btn small secondary">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./images/projectDemo.jpg" alt="Dự án 2">
+                        </div>
+                        <div class="project-info">
+                            <h3>Portfolio 3D</h3>
+                            <p>Portfolio cá nhân sử dụng Three.js để tạo trải nghiệm 3D tương tác và hấp dẫn.</p>
+                            <div class="project-tech">
+                                <span>HTML/CSS</span>
+                                <span>JavaScript</span>
+                                <span>Three.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn small">Demo</a>
+                                <a href="#" class="btn small secondary">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./images/projectDemo.jpg" alt="Dự án 3">
+                        </div>
+                        <div class="project-info">
+                            <h3>Task Manager</h3>
+                            <p>Ứng dụng quản lý công việc với xác thực người dùng, phân loại nhiệm vụ và thông báo.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Firebase</span>
+                                <span>Material UI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn small">Demo</a>
+                                <a href="#" class="btn small secondary">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="center-button">
+                    <a href="#" class="btn primary">Xem thêm dự án</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Liên hệ</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Thông tin liên hệ</h3>
+                        <p>Hãy liên hệ với tôi nếu bạn có bất kỳ câu hỏi nào hoặc muốn thảo luận về dự án tiềm năng.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>nminhtan1411@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Điện thoại</h4>
+                                    <p>+84 703 635 306</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Địa chỉ</h4>
+                                    <p>Hồ Chí Minh, Việt Nam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Gửi tin nhắn</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Họ tên" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" placeholder="Tiêu đề">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Tin nhắn" required></textarea>
+                            </div>
+                            <button type="submit" class="btn primary">Gửi tin nhắn</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Nguyễn Minh Tân</h3>
+                    <p>Web Developer & Designer</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Liên kết nhanh</h4>
+                    <ul>
+                        <li><a href="#home">Trang chủ</a></li>
+                        <li><a href="#about">Giới thiệu</a></li>
+                        <li><a href="#skills">Kỹ năng</a></li>
+                        <li><a href="#projects">Dự án</a></li>
+                        <li><a href="#contact">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Liên hệ</h4>
+                    <p><i class="fas fa-envelope"></i> nminhtan1411@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +84 703 635 306</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Hồ Chí Minh, Việt Nam</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Theo dõi</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Nguyễn Minh Tân. Tất cả các quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="/assets/js/script_Tan.js"></script>
+</body>
+</html>
